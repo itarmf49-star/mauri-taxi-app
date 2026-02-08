@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --chinguetti-stone: #8B7355; --chinguetti-terracotta: #C17F59;
+  --chinguetti-ochre: #D4A574; --chinguetti-sand: #E8D5B7;
+  --chinguetti-desert: #F5E6D3; --chinguetti-mosque: #5D4E37;
+}
+body { background: linear-gradient(135deg, var(--chinguetti-desert) 0%, var(--chinguetti-sand) 100%); min-height: 100vh; }

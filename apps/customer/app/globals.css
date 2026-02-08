@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --chinguetti-stone: #8B7355;
+  --chinguetti-terracotta: #C17F59;
+  --chinguetti-ochre: #D4A574;
+  --chinguetti-sand: #E8D5B7;
+  --chinguetti-desert: #F5E6D3;
+  --chinguetti-mosque: #5D4E37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[dir="rtl"] {
+  font-family: 'Amiri', 'Noto Kufi Arabic', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--chinguetti-desert) 0%, var(--chinguetti-sand) 100%);
+  min-height: 100vh;
+}
+
+/* Chevron pattern - Chinguetti heritage */
+.chevon-pattern {
+  background-image: 
+    linear-gradient(45deg, var(--chinguetti-stone) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--chinguetti-stone) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--chinguetti-stone) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--chinguetti-stone) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-color: var(--chinguetti-ochre);
+  opacity: 0.15;
+}
